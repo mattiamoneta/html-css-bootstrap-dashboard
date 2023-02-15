@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/master.css">
+
+    <title>Dashboard</title>
 </head>
-<body>
-    
-</body>
+    <body>
+        
+        <header>
+
+            <!-- 
+                Navbar
+             -->
+             <nav class="navbar navbar-expand bg-body-tertiary">
+                <div class="container-fluid d-flex justify-content-btween">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.svg" class="d-none d-lg-inline" alt="Boolean Logo">
+                        <img src="./img/mobile-logo.png" class="d-lg-none" alt="Boolean Logo">
+                      </a>
+                    <form class="d-flex w-75 input-group" role="search">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni Laravel" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
+                      </li>
+                      <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-circle-info"></i></a>
+                      </li>
+                      <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                      </li>
+                      <li class="nav-item ms-2 dropdown">
+                        <a class="nav-link text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+            
+              </nav>
+
+        </header>
+
+        <main>
+            <aside></aside>
+            <div class="wrapper"></div>
+        </main>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
 </html>
