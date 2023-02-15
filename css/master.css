@@ -8,9 +8,13 @@
 
 :root{
 
+    /* Colors */
+
+    --color-deepblue: #051e34;
+
     /* Navbar */
     --navbar-height: 70px;
-    --sidebar-width: 50px;
+    --sidebar-width: 60px;
     --sidebar-width-md: 180px;
 
 }
@@ -41,9 +45,29 @@
 
 /* Sidebar */
 
+.ms_fa-fixed{
+    width: 40px;
+    height: 40px;
+}
+
 .ms_sidebar{
+    position: relative;
     width: var(--sidebar-width);
-    background-color: blue;
+    background-color: var(--color-deepblue);
+    background-image: url('../img/sidebar-bg.png');
+}
+
+.ms_sidebar a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.ms_sidebar_bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Content */
@@ -59,7 +83,6 @@
 
     .ms_sidebar{
         width: var(--sidebar-width-md);
-        background-color: yellow;
     }
 
     .ms_content{
