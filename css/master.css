@@ -11,6 +11,7 @@
     /* Colors */
 
     --color-deepblue: #051e34;
+    --color-pillblue: #165bba;
 
     /* Navbar */
     --navbar-height: 70px;
@@ -18,6 +19,10 @@
     --sidebar-width-md: 180px;
 
 }
+
+/* Colors */
+
+.bg-pillblue{background-color: var(--color-pillblue);}
 
 
 /* Navbar */
@@ -40,7 +45,6 @@
 .ms_main_wrapper{
     display: flex;
     height: calc(100vh - var(--navbar-height));
-    background-color: red;
 }
 
 /* Sidebar */
@@ -74,9 +78,28 @@
 
 .ms_content{
     width: calc(100% - var(--sidebar-width));
-    background-color: bisque;
 }
 
+/* Breadcrumb */
+
+/* override colore */
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+}
+
+.ms_breadcrumb_item_none::before{
+    display: none;
+}
+
+
+.ms_pill_primary{
+    background-color: var(--color-pillblue);
+    transition: all .3s ease;
+}
+
+.ms_pill_primary:hover{
+    background-color: var(--color-deepblue);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -87,7 +110,6 @@
 
     .ms_content{
         width: calc(100% - var(--sidebar-width-md));
-        background-color: brown;
     }
 
 }
