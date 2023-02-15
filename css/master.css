@@ -6,11 +6,20 @@
     box-sizing: border-box;
 }
 
+:root{
+
+    /* Navbar */
+    --navbar-height: 70px;
+    --sidebar-width: 50px;
+    --sidebar-width-md: 180px;
+
+}
+
 
 /* Navbar */
 
 .navbar{
-    height: 70px;
+    height: var(--navbar-height);
 }
 
 .navbar-brand img{
@@ -19,4 +28,43 @@
 
 .ms_search_icon{
     position: relative;
+}
+
+
+/* Main */
+
+.ms_main_wrapper{
+    display: flex;
+    height: calc(100vh - var(--navbar-height));
+    background-color: red;
+}
+
+/* Sidebar */
+
+.ms_sidebar{
+    width: var(--sidebar-width);
+    background-color: blue;
+}
+
+/* Content */
+
+.ms_content{
+    width: calc(100% - var(--sidebar-width));
+    background-color: bisque;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .ms_sidebar{
+        width: var(--sidebar-width-md);
+        background-color: yellow;
+    }
+
+    .ms_content{
+        width: calc(100% - var(--sidebar-width-md));
+        background-color: brown;
+    }
+
 }

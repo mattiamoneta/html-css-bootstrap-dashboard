@@ -26,34 +26,38 @@
              <nav class="navbar navbar-expand bg-body-tertiary">
                 <div class="container-fluid d-flex justify-content-btween">
                     <a class="navbar-brand" href="#">
-                        <img src="./img/logo.svg" class="d-none d-lg-inline" alt="Boolean Logo">
-                        <img src="./img/mobile-logo.png" class="d-lg-none" alt="Boolean Logo">
+                        <img src="./img/logo.svg" class="d-none d-md-inline" alt="Boolean Logo">
+                        <img src="./img/mobile-logo.png" class="d-md-none" alt="Boolean Logo">
                       </a>
                     <form class="d-flex w-75 input-group" role="search">
-                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni Laravel" aria-label="Search">
                     </form>
 
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                      <li class="nav-item d-none d-lg-inline">
+                      <li class="nav-item d-none d-md-inline">
                         <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
                       </li>
-                      <li class="nav-item d-none d-lg-inline">
+                      <li class="nav-item d-none d-md-inline">
                         <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-circle-info"></i></a>
                       </li>
-                      <li class="nav-item d-none d-lg-inline">
+                      <li class="nav-item d-none d-md-inline">
                         <a class="nav-link ms-2" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                       </li>
                       <li class="nav-item ms-2 dropdown">
+
                         <a class="nav-link text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bell"></i>
                         </a>
+
+                        <!-- Dropdown -->
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li><a class="dropdown-item" href="#">Action</a></li>
                           <li><a class="dropdown-item" href="#">Another action</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
+
                       </li>
                     </ul>
 
@@ -63,9 +67,18 @@
 
         </header>
 
-        <main>
-            <aside></aside>
-            <div class="wrapper"></div>
+        <main class="ms_main_wrapper">
+            <!-- 
+                Sidebar
+             -->
+            <aside class="ms_sidebar">
+
+            </aside>
+
+            <!-- 
+                Content
+             -->
+            <div class="ms_content"></div>
         </main>
 
 
