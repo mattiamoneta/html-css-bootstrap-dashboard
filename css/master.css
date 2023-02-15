@@ -20,6 +20,10 @@
 
 }
 
+html, body{
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Colors */
 
 .bg-pillblue{background-color: var(--color-pillblue);}
