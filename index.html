@@ -27,15 +27,15 @@
             <!-- 
                 Navbar
              -->
-             <nav class="navbar navbar-expand bg-body-tertiary">
+             <nav class="navbar navbar-expand bg-body-white">
                 <div class="container-fluid d-flex justify-content-btween">
                     <a class="navbar-brand" href="#">
                         <img src="./img/logo.svg" class="d-none d-md-inline" alt="Boolean Logo">
                         <img src="./img/mobile-logo.png" class="d-md-none" alt="Boolean Logo">
                       </a>
                     <form class="d-flex w-75 input-group" role="search">
-                        <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni Laravel" aria-label="Search">
+                        <span class="input-group-text border-end-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="form-control border-start-0 bg-light" type="search" placeholder="Prova a cercare: Lezioni Laravel" aria-label="Search">
                     </form>
 
                     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -134,8 +134,52 @@
                                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Form Qui</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body">
-                                  CONTENUTO
+                                <div class="offcanvas-body text-start">
+                                    <form class="row g-3">
+                                      <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                      </div>
+                                      <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                      </div>
+                                      <div class="col-12">
+                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                          <option selected>Choose...</option>
+                                          <option>...</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                                          <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                      </div>
+                                    </form>
                                 </div>
 
                             </div>

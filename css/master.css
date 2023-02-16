@@ -99,6 +99,7 @@ html, body{
 
 .ms_table_avatar{
     height: 30px;
+    border-radius: 50%;
 }
 
 /* Breadcrumb */
