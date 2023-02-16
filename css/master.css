@@ -1,3 +1,5 @@
+/* Global */
+
 *,
 ::before,
 ::after{
@@ -24,9 +26,11 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* Colors */
 
 .bg-pillblue{background-color: var(--color-pillblue);}
+
 
 
 /* Navbar */
@@ -53,13 +57,8 @@ html, body{
 
 /* Sidebar */
 
-.ms_fa-fixed{
-    width: 40px;
-}
-
-.ms_fa-fixed-sm{
-    width: 20px;
-}
+.ms_fa-fixed{width: 40px;}
+.ms_fa-fixed-sm{ width: 20px;}
 
 .ms_sidebar{
     position: relative;
@@ -80,9 +79,7 @@ html, body{
 }
 
 
-.ms_sidebar a:hover{
-    background-color: rgba(255, 255, 255, .2);
-}
+.ms_sidebar a:hover{ background-color: rgba(255, 255, 255, .2);}
 
 
 
@@ -121,7 +118,10 @@ html, body{
 
 /* Table */
 
-table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
+table.table.ms_table td:nth-child(2), 
+table.table.ms_table th:nth-child(2),
+table.table.ms_table td:nth-child(3),
+table.table.ms_table th:nth-child(3){
    display: none;
 }
 
@@ -133,14 +133,9 @@ table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
 /* Breadcrumb */
 
 /* override colore */
-.breadcrumb-item + .breadcrumb-item::before {
-    color: white;
-}
+.breadcrumb-item + .breadcrumb-item::before {color: white;}
 
-.ms_breadcrumb_item_none::before{
-    display: none;
-}
-
+.ms_breadcrumb_item_none::before{display: none;}
 
 .ms_pill_primary{
     background-color: var(--color-pillblue);
@@ -151,15 +146,22 @@ table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
     background-color: var(--color-deepblue);
 }
 
+/* Responsive */
+
+
+/* Breakpoint  SM */
 @media screen and (min-width: 576px) {
 
-    table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
+    table.table.ms_table td:nth-child(2), 
+    table.table.ms_table th:nth-child(2),
+    table.table.ms_table td:nth-child(3),
+    table.table.ms_table th:nth-child(3){
         display: table-cell;
-     }
+    }
 
 }
 
-
+/* Breakpoint  MD */
 @media screen and (min-width: 768px) {
 
     .ms_sidebar{
@@ -178,6 +180,7 @@ table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
 }
 
 
+/* Breakpoint  XL */
 @media screen and (min-width: 1200px) {
 
     .offcanvas.offcanvas-end.ms_offcanvas{
