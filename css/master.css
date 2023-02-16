@@ -57,6 +57,10 @@ html, body{
     width: 40px;
 }
 
+.ms_fa-fixed-sm{
+    width: 20px;
+}
+
 .ms_sidebar{
     position: relative;
     width: var(--sidebar-width);
@@ -95,7 +99,31 @@ html, body{
     width: calc(100% - var(--sidebar-width));
 }
 
+/* Offcanvas */
+.offcanvas.offcanvas-end.ms_offcanvas{
+    width: 100vw;
+}
+
+/* Form */
+
+.form-label.form-required-mark{
+   position: relative;
+}
+
+.form-label.form-required-mark::before{
+    content: '*';
+    position: absolute;
+    left: -8px;
+    top: -4px;
+    color: red;
+    font-size: 1.5rem;
+}
+
 /* Table */
+
+table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
+   display: none;
+}
 
 .ms_table_avatar{
     height: 30px;
@@ -123,6 +151,14 @@ html, body{
     background-color: var(--color-deepblue);
 }
 
+@media screen and (min-width: 576px) {
+
+    table.table.ms_table td:nth-child(2), table.table.ms_table th:nth-child(2){
+        display: table-cell;
+     }
+
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -133,5 +169,20 @@ html, body{
     .ms_content{
         width: calc(100% - var(--sidebar-width-md));
     }
+
+    .offcanvas.offcanvas-end.ms_offcanvas{
+        width: 55vw;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .offcanvas.offcanvas-end.ms_offcanvas{
+        width: 45vw;
+    }
+
 
 }

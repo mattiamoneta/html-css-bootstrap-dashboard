@@ -56,10 +56,9 @@
 
                         <!-- Dropdown -->
                         <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#"><div class="ms_fa-fixed-sm d-inline-block text-center me-1"><i class="fa-xs fa-solid fa-user"></i></div></i> Profilo</a></li>
+                          <li><a class="dropdown-item" href="#"><div class="ms_fa-fixed-sm d-inline-block text-center me-1"><i class="fa-xs fa-solid fa-money-bills"></i></div> Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#"><div class="ms_fa-fixed-sm d-inline-block text-center me-1"><i class="fa-xs fa-solid fa-right-from-bracket"></i></div> Logout</a></li>
                         </ul>
 
                       </li>
@@ -102,7 +101,7 @@
 
                     <!-- Top Section -->
                     <div class="row bg-primary text-white py-3 px-3">
-                        <div class="col-10 col-md-6 order-2 order-md-1">
+                        <div class="col-xs-10 col-md-6 order-2 order-md-1">
                             <div class="dashboard-title">
                                <span class="fs-3 fw-bold">Boolean</span>
                                <a href="#"> <span class="badge rounded-pill bg-pillblue ms_pill_primary">Piano blaze</span></a>
@@ -119,65 +118,73 @@
                                   </nav>
                             </div>
                         </div>
-                        <div class="col-10 col-md-3 order-3 order-md-2">
+                        <div class="col-xs-10 col-md-3 order-3 order-md-2">
                             <span class="d-block">Studenti online negli ultimi 30 minuti</span>
                             <span class="fs-2 fw-bold">125</span>
                         </div>
-                        <div class="col-10 col-md-3 text-md-end order-1 order-md-3">
+                        <div class="col-xs-10 col-md-3 text-md-end order-1 order-md-3">
                             <span class="me-3">Nuovo Studente</span>
                             <button type="button" class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas ms_offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
                                 <!-- Offcanvas Form -->
                                 <div class="offcanvas-header">
-                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Form Qui</h5>
+                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body text-start">
                                     <form class="row g-3">
                                       <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
+                                        <label for="inputName4" class="form-label form-required-mark">Nome</label>
+                                        <input type="text" class="form-control" id="inputName4" required>
                                       </div>
                                       <div class="col-md-6">
-                                        <label for="inputPassword4" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4">
-                                      </div>
-                                      <div class="col-12">
-                                        <label for="inputAddress" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                      </div>
-                                      <div class="col-12">
-                                        <label for="inputAddress2" class="form-label">Address 2</label>
-                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                        <label for="inputLastName4" class="form-label form-required-mark">Cognome</label>
+                                        <input type="text" class="form-control" id="inputLastName4" required>
                                       </div>
                                       <div class="col-md-6">
-                                        <label for="inputCity" class="form-label">City</label>
-                                        <input type="text" class="form-control" id="inputCity">
+                                        <label for="inputEmail4" class="form-label form-required-mark">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" required>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label form-required-mark">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" required>
+                                      </div>
+                                      <div class="col-12">
+                                        <label for="inputAddress" class="form-label form-required-mark">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress" required>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputCity" class="form-label form-required-mark">Città</label>
+                                        <input type="text" class="form-control" id="inputCity" required>
                                       </div>
                                       <div class="col-md-4">
-                                        <label for="inputState" class="form-label">State</label>
-                                        <select id="inputState" class="form-select">
-                                          <option selected>Choose...</option>
-                                          <option>...</option>
+                                        <label for="inputState" class="form-label form-required-mark">Stato</label>
+                                        <select id="inputState" class="form-select" required>
+                                          <option selected>Scegli...</option>
+                                          <option>Italia</option>
                                         </select>
                                       </div>
                                       <div class="col-md-2">
-                                        <label for="inputZip" class="form-label">Zip</label>
-                                        <input type="text" class="form-control" id="inputZip">
+                                        <label for="inputZip" class="form-label form-required-mark">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip" required>
                                       </div>
                                       <div class="col-12">
+                                        <label for="inputGroupFile04" class="form-label form-required-mark">Foto</label>
+                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                                      </div>
+                                      <div class="col-12 py-3">
                                         <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck" required>
                                           <label class="form-check-label" for="gridCheck">
-                                            Check me out
+                                            Seleziona per proseguire
                                           </label>
                                         </div>
                                       </div>
                                       <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
                                       </div>
                                     </form>
                                 </div>
@@ -201,14 +208,14 @@
                                 <div class="card-body">
                                   
                                     <!-- Tabella -->
-                                    <table class="table table-hover align-middle">
+                                    <table class="table ms_table table-hover align-middle">
                                         <thead>
                                           <tr>
                                             <th scope="col">Nome</th>
-                                            <th scope="col" class="text-end">Data inizio</th>
-                                            <th scope="col" class="text-end">ROI</th>
-                                            <th scope="col" class="text-end">Stato</th>
-                                            <th scope="col" class="text-end">Azioni</th>
+                                            <th scope="col" class="text-center">Data inizio</th>
+                                            <th scope="col" class="text-center">ROI</th>
+                                            <th scope="col" class="text-center">Stato</th>
+                                            <th scope="col" class="text-center">Azioni</th>
                                           </tr>
                                         </thead>
                                         <tbody>
@@ -218,10 +225,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
@@ -232,10 +239,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
@@ -246,10 +253,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
@@ -260,10 +267,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
@@ -274,10 +281,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
@@ -288,10 +295,10 @@
                                                 <img src="./img/class-avatar.jpg" class="ms_table_avatar me-1" alt="">
                                                 <span>Classe 76</span>
                                             </td>
-                                            <td class="text-end">15 Feb 2021</td>
-                                            <td class="text-end">20%</td>
-                                            <td class="text-end"><span class="badge text-bg-success">Done</span></td>
-                                            <td class="text-end">
+                                            <td class="text-center">15 Feb 2021</td>
+                                            <td class="text-center">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                             </td>
